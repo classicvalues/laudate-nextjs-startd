@@ -1,0 +1,82 @@
+{
+  "name": "domum-casa",
+  "description": "A luxury rental management platform for short and long-term rentals.",
+  "version": "1.0.0",
+  "private": true,
+  "author": "Santiago de Jesus Villalobos-Gonzalez <domum.casa@usa.com>",
+  "license": "MIT",
+  "keywords": [
+    "luxury rental",
+    "property management",
+    "short-term rentals",
+    "long-term rentals",
+    "nextjs",
+    "typescript",
+    "tailwind"
+  ],
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "type-check": "tsc",
+    "lint": "eslint --ignore-path .gitignore \"src/**/*.+(ts|js|tsx)\"",
+    "format": "prettier --ignore-path .gitignore \"src/**/*.+(ts|js|tsx)\" --write",
+    "postinstall": "husky install"
+  },
+  "lint-staged": {
+    "./src/**/*.{ts,js,jsx,tsx}": [
+      "yarn lint --fix",
+      "yarn format"
+    ]
+  },
+  "dependencies": {
+    "@emotion/react": "11.11.4",
+    "@emotion/styled": "11.11.5",
+    "@fontsource/inter": "4.2.1",
+    "@tsparticles/engine": "3.5.0",
+    "@tsparticles/react": "3.0.0",
+    "babel-plugin-macros": "3.1.0",
+    "next": "14.2.4",
+    "next-seo": "4.29.0",
+    "next-themes": "^0.0.15",
+    "react": "18.2.0",
+    "react-dom": "18.3.1",
+    "react-icons": "5.2.1",
+    "twin.macro": "3.4.1",
+    "twind": "0.15.4"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "19.3.0",
+    "@commitlint/config-conventional": "11.0.0",
+    "@svgr/webpack": "8.1.0",
+    "@types/node": "14.14.28",
+    "@types/react": "18.3.1",
+    "@types/react-dom": "17.0.1",
+    "@typescript-eslint/eslint-plugin": "4.15.1",
+    "@typescript-eslint/parser": "4.15.1",
+    "autoprefixer": "^10.4.2",
+    "commitizen": "4.3.0",
+    "cz-conventional-changelog": "3.3.0",
+    "eslint": "8.5.0",
+    "eslint-config-airbnb": "18.2.1",
+    "eslint-config-next": "12.0.7",
+    "eslint-config-prettier": "7.2.0",
+    "eslint-import-resolver-typescript": "2.4.0",
+    "eslint-plugin-import": "2.22.1",
+    "eslint-plugin-jsx-a11y": "6.4.1",
+    "eslint-plugin-prettier": "3.3.1",
+    "eslint-plugin-react": "7.22.0",
+    "eslint-plugin-react-hooks": "4.2.0",
+    "husky": "5.0.9",
+    "lint-staged": "10.5.4",
+    "postcss": "^8.4.5",
+    "prettier": "2.5.1",
+    "tailwindcss": "3.4.4",
+    "typescript": "5.5.3"
+  },
+  "config": {
+    "commitizen": {
+      "path": "cz-conventional-changelog"
+    }
+  }
+}
