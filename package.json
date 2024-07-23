@@ -43,7 +43,7 @@
     "react-dom": "18.3.1",
     "react-icons": "5.2.1",
     "twin.macro": "3.4.1",
-    "twind": "0.15.4"
+    "twind": "0.16.19"
   },
   "devDependencies": {
     "@commitlint/cli": "19.3.0",
